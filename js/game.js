@@ -1,4 +1,4 @@
-var game = new Phaser.Game(480, 320, Phaser.AUTO, null, {preload: preload, create: create, update: update});
+var game = new Phaser.Game(320, 480, Phaser.AUTO, null, {preload: preload, create: create, update: update});
 var ball;
 var paddle;
 var bricks;
@@ -60,8 +60,8 @@ function innitBricks(){
 		width: 50,
 		height: 20,
 		count: {
-			row: 7,
-			col: 3
+			row: 4,
+			col: 7
 		},
 		offset: {
 			top: 50,
