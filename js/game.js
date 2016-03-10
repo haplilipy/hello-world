@@ -39,14 +39,14 @@ function create() {
 
 	scoreText = game.add.text(5, 5, 'Points: 0', { font: '18px Arial', fill: '#0095DD' });
 	textStyle = { font: '18px Arial', fill: '#0095DD' };
-	startText = game.add.text(game.world.width*0.5, game.world.height*0.8,'Clickt to Start!', textStyle);
+	startText = game.add.text(game.world.width*0.5, game.world.height*0.7,'Clickt to Start!', textStyle);
     startText.anchor.set(0.5);
     game.input.onDown.addOnce(function(){
     	startText.visible = false;
     	ball.body.velocity.set(150, -150);
     }, this);
 
-    lossText = game.add.text(game.world.width*0.5, game.world.height*0.5,'Loss, again?', textStyle);
+    lossText = game.add.text(game.world.width*0.5, game.world.height*0.7,'Loss, again?', textStyle);
     lossText.anchor.set(0.5);
     lossText.visible = false;
 }
